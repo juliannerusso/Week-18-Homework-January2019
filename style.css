@@ -1,4 +1,46 @@
-body{
+
+/* Nav */
+.navbar {
+    background: white;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.navbar-brand {
+    color: #E18155;
+    font-size: 1.5em;
+}
+
+.navbar-brand:hover {
+    color: #8FBBA7;
+    font-size: 1.5em;
+}
+
+.navbar-brand:active {
+    color: #2A6459;
+    font-size: 1.5em;
+}
+
+.nav-link {
+    color: #E18155;
+    font-size: 1.5em;
+}
+
+.nav-link:hover {
+    color: #8FBBA7;
+    font-size: 1.5em;
+}
+
+.nav-link:active {
+    color: #2A6359;
+    font-size: 1.5em;
+}
+
+/* Typography */
+body {
     font-family: mr-eaves-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -37,24 +79,7 @@ p {
     font-style: normal;
 }
 
-.padding {
-    padding-top: 5%;
-}
 
-
-.nav {
-    background: white;
-    height: 50px;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-
-}
-
-
-.card {
-    border: none;
-}
 
 .jumbotron-main {
     background-color: #E18155;
@@ -72,10 +97,14 @@ p {
     background-color: #E18155;
 }
 
-.circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.padding {
+    padding-top: 5%;
+}
+
+/* Portfolio */
+
+.card {
+    border: none;
 }
 
 .btn {
@@ -90,7 +119,52 @@ p {
 
 .btn:hover {
     background-color: #2A6359;
+    color: white;
 }
+
+/* Footer */
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+      display: none !important;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+    .lead {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2.25em;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+    
+    h5 {
+        font-size: 1.75em;
+    }
+
+  }
 
 /* Colors
 2A6359 - Teal
